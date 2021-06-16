@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.creator.ConnectFour">
+  <grid id="27dc6" binding="board" custom-create="true" layout-manager="GridLayoutManager" row-count="8" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="2" vgap="2">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="612" height="446"/>
+    </constraints>
+    <properties>
+      <background color="-12435039"/>
+      <enabled value="false"/>
+      <minimumSize width="562" height="420"/>
+      <preferredSize width="562" height="420"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="7fa38" class="javax.swing.JButton" binding="one">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <hideActionText value="true"/>
+          <text value="1"/>
+        </properties>
+      </component>
+      <component id="4d4d9" class="javax.swing.JButton" binding="three">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="3"/>
+        </properties>
+      </component>
+      <component id="eff9e" class="javax.swing.JButton" binding="two">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="2"/>
+        </properties>
+      </component>
+      <component id="3dd61" class="javax.swing.JButton" binding="four">
+        <constraints>
+          <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="4"/>
+        </properties>
+      </component>
+      <component id="feab5" class="javax.swing.JButton" binding="five">
+        <constraints>
+          <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="5"/>
+        </properties>
+      </component>
+      <component id="c9245" class="javax.swing.JButton" binding="six">
+        <constraints>
+          <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="6"/>
+        </properties>
+      </component>
+      <component id="7c266" class="javax.swing.JButton" binding="seven">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <foreground color="-14670271"/>
+          <text value="7"/>
+        </properties>
+      </component>
+      <grid id="3ca0b" binding="pos00" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="654d4" binding="pos10" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="662a1" binding="pos20" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="40ac6" binding="pos30" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="81078" binding="pos40" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="b393d" binding="pos50" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="e46a1" binding="pos11" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="9ab06" binding="pos01" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="f2bc5" binding="pos21" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="5972a" binding="pos31" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="ed926" binding="pos41" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="be45f" binding="pos51" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="a8032" binding="pos02" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="f5bc8" binding="pos12" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="ed4e" binding="pos22" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="d6351" binding="pos32" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="ffd1b" binding="pos42" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="3592c" binding="pos52" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="1555b" binding="pos03" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="81a23" binding="pos13" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="24048" binding="pos23" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="4ca65" binding="pos33" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+          <foreground color="-4473925"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="7f0ea" binding="pos43" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="be2ab" binding="pos53" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="334c0" binding="pos04" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="f4e3c" binding="pos14" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="bcf60" binding="pos24" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="true">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="bd4f1" binding="pos34" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="9d2e7" binding="pos44" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none">
+          <font/>
+        </border>
+        <children/>
+      </grid>
+      <grid id="7237e" binding="pos54" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="1e0cf" binding="pos45" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="c772" binding="pos55" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="63db2" binding="pos35" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="fe7f9" binding="pos25" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="22b75" binding="pos15" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="62c1c" binding="pos05" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="574fb" binding="pos06" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="b1f48" binding="pos16" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="c1fee" binding="pos26" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="dc132" binding="pos36" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="8b922" binding="pos46" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="74a95" binding="pos56" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="70" height="50"/>
+            <preferred-size width="70" height="50"/>
+            <maximum-size width="70" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-14670271"/>
+        </properties>
+        <border type="none"/>
+        <children/>
+      </grid>
+      <grid id="ac506" binding="printer" custom-create="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="50"/>
+            <preferred-size width="200" height="50"/>
+            <maximum-size width="200" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-16661050"/>
+          <font name="Arial Black" size="48" style="1"/>
+          <foreground color="-14670271"/>
+          <inheritsPopupMenu value="false"/>
+          <name value="The Winner is..."/>
+          <toolTipText value="The Winner is..."/>
+          <verifyInputWhenFocusTarget value="true"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none" title="The Winner is...">
+          <font name="Arial Black" size="18" style="1"/>
+          <title-color color="-14670271"/>
+        </border>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>
